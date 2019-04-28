@@ -1,0 +1,5 @@
+Import Stocks
+mongoimport -h mongodb://localhost:27017/slicepay -d slicepay -c Stocks --file stocks.csv --type csv --headerline --host=127.0.0.1
+
+//Import Prices
+mongoimport -h mongodb://localhost:27017/slicepay -d slicepay -c Prices --file prices.csv --type csv --headerline --host=127.0.0.1
